@@ -4,7 +4,11 @@
     "details": [
       {
         "appID": "8B6JDX3BPC.catanzaroSolutions.Trippie",
-        "paths": ["*"]
+        "paths": [
+          "/trips/*",
+          "/invite/*",
+          "/share/*"
+        ]
       }
     ]
   }
