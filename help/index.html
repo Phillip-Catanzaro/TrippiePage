@@ -6,66 +6,95 @@
     <title>Trippie Help Center</title>
     <style>
       :root {
-        color-scheme: light dark;
+        color-scheme: light;
         font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+        --primary: #0d4ed8;
+        --accent: #21c6ff;
+        --ink: #0b1324;
+        --muted: #30405a;
       }
       body {
         margin: 0;
         padding: 0;
-        background: radial-gradient(circle at 50% 0%, #f7f9fc, #e2e8f0 45%, #d6dfe9 80%);
         min-height: 100vh;
-        color: #0b1324;
+        color: var(--ink);
+        background: radial-gradient(circle at 20% 20%, #eaf3ff, #d9e9ff 32%, #c8dcff 60%),
+          linear-gradient(135deg, #f7fbff 10%, #eef5ff 45%, #e1edff 90%);
       }
       .page {
-        max-width: 840px;
+        max-width: 860px;
         margin: 0 auto;
-        padding: 48px 24px 72px;
+        padding: 52px 24px 80px;
       }
       header {
         text-align: center;
-        margin-bottom: 32px;
+        margin-bottom: 36px;
+      }
+      .brand-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: rgba(13, 78, 216, 0.08);
+        border: 1px solid rgba(13, 78, 216, 0.18);
+        color: var(--muted);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      .brand-pill .plane {
+        width: 18px;
+        height: 18px;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at 30% 30%, #fff, #d6e8ff);
+        border-radius: 50%;
+        box-shadow: 0 8px 20px rgba(13, 78, 216, 0.18);
+        color: var(--primary);
       }
       h1 {
-        margin: 0 0 8px;
-        font-size: 32px;
+        margin: 16px 0 10px;
+        font-size: 34px;
         letter-spacing: -0.02em;
       }
       p {
-        line-height: 1.6;
+        line-height: 1.65;
         margin: 12px 0;
-        color: #1f2937;
+        color: var(--muted);
       }
       h2 {
         margin-top: 28px;
         font-size: 20px;
-        color: #0b1324;
+        color: var(--ink);
       }
       ul {
         padding-left: 20px;
-        color: #1f2937;
+        color: var(--muted);
       }
       a {
-        color: #0d6efd;
+        color: var(--primary);
       }
       .card {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.88);
         border-radius: 16px;
         padding: 24px;
         box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-        border: 1px solid rgba(15, 23, 42, 0.07);
+        border: 1px solid rgba(13, 78, 216, 0.12);
+        backdrop-filter: blur(6px);
       }
       .contact-box {
         margin-top: 18px;
         padding: 16px;
         border-radius: 12px;
-        background: rgba(13, 110, 253, 0.08);
-        border: 1px solid rgba(13, 110, 253, 0.25);
+        background: rgba(33, 198, 255, 0.12);
+        border: 1px solid rgba(13, 78, 216, 0.22);
       }
     </style>
   </head>
   <body>
     <div class="page">
       <header>
+        <span class="brand-pill"><span class="plane">✈︎</span> Trippie Help</span>
         <h1>Help & Support</h1>
         <p>Guides for getting the most from Trippie.</p>
       </header>
